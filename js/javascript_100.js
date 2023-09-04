@@ -93,7 +93,6 @@
 // console.log(1010, "" + output_1010);
 
 // // TODO : 1011 : 문자형(char)으로 변수를 하나 선언하고, 변수에 문자를 저장한 후 변수에 저장되어 있는 문자를 그대로 출력해보자.
-
 // // 입력 : p
 // // 출력 : p
 
@@ -284,7 +283,6 @@
 // };
 
 // // TODO : 1026 : 입력되는 시:분:초 에서 분만 출력해보자.
-
 // // 입력 : 17:23:57
 // // 출력 : 23
 // let input_1026 = prompt(" 1026, 17:23:57 입력 ");
@@ -367,3 +365,311 @@
 // // } else {
 // //     console.log(1030, "" + "-9223372036854775808 ~ +9223372036854775807 만 입력 가능합니다.");
 // // };
+
+// // TODO : 1031 : 10진수를 입력받아 8진수(octal)로 출력해보자.
+// // 입력 : 10
+// // 출력 : 12
+
+// let input_1031 = Number(prompt(" 10 입력 "));
+
+// let output_1031 = input_1031.toString(8);
+
+// console.log(1031, "" + output_1031);
+
+// // TODO : 1032 : 10진 정수 입력받아 16진수로 출력하기
+// // TODO :        16진수(소문자)로 출력한다.
+// // 입력 : 255
+// // 출력 : ff
+
+// let input_1032 = Number(prompt("255 입력"));
+
+// let output_1032 = input_1032.toString(16);
+
+// console.log(1032, "" + output_1032);
+
+// // TODO : 1033 : 10진 정수 입력받아 16진수로 출력하기
+// // TODO :        16진수(대문자)로 출력한다.
+// // 입력 : 255
+// // 출력 : FF
+
+// let input_1033 = Number(prompt("255 입력"));
+
+// let output_1033 = input_1033.toString(16).toUpperCase();
+
+// console.log(1033, "" + output_1033);
+
+// let input_1034 = Number(prompt(" 1034, 13 입력 "));
+
+// let output_1034 = parseInt(input_1034, 8);
+
+// console.log(1034, "" + output_1034);
+
+// // TODO : 1035 : 16진수로 입력된 정수 1개를 8진수로 바꾸어 출력해보자.
+// // TODO :        16진 정수 1개가 입력된다. (단, 16진수는 영문 소문자로 입력된다.)
+// // 입력 : f
+// // 출력 : 17
+
+// let input_1035 = prompt(" 1035, f 입력 ");
+// let decimalNumber_1035 = parseInt(input_1035, 16);
+// let output_1035 = decimalNumber_1035.toString(8);
+
+// console.log(1035, "" + output_1035);
+
+// // TODO : 1036 : 영문자 1개를 입력받아 아스키 코드표의 10진수 값으로 출력해보자.
+// // 입력 : A
+// // 출력 : 65
+
+// let input_1036 = prompt(" 1036, A 입력 ");
+// let output_1036 = input_1036.charCodeAt(0);
+
+// console.log(1036, "" + output_1036);
+
+// // TODO : 1037 : 10진 정수 1개를 입력받아 아스키 문자로 출력해보자.
+// // TODO :        단, 0 ~ 255 범위의 정수만 입력된다.
+// // 입력 : 65
+// // 출력 : A
+
+// let input_1037 = Number(prompt(" 1037, 65 입력 "));
+
+// if (input_1037 >= 0 && input_1037 <= 255) {
+//   let asciiChar_1037 = String.fromCharCode(input_1037);
+//   let output_1037 = asciiChar_1037;
+//   console.log(1037, "" + output_1037);
+// } else {
+//   console.log(1037, "" + "유효한 범위의 정수(0 ~ 255)를 입력하세요.");
+// }
+
+// // TODO : 1038 : 정수 2개를 입력받아 합을 출력하는 프로그램을 작성해보자.
+// // TODO :        (단, 입력되는 정수는 -1073741824 ~ 1073741824 이다.)
+// // TODO :        2개의 정수가 공백으로 구분되어 입력된다.
+// // 입력 : 123 -123
+// // 출력 : 0
+// const min_value_1038 = -1073741824;
+// const max_value_1038 = 1073741824;
+
+// let input_1038 = prompt(" 1038, 123 -123 입력 ").split(" ");
+
+// let input_1038_1 = Number(input_1038[0]);
+// let input_1038_2 = Number(input_1038[1]);
+
+// if (
+//   isNaN(input_1038_1) ||
+//   isNaN(input_1038_2) ||
+//   input_1038_1 < min_value_1038 ||
+//   input_1038_1 > max_value_1038 ||
+//   input_1038_2 < min_value_1038 ||
+//   input_1038_2 > max_value_1038
+// ) {
+//   console.log(
+//     1037,
+//     "" + "유효한 범위의 (-1073741824 ~ 1073741824) 를 입력하세요."
+//   );
+// } else {
+//   let input_1038_sum = input_1038_1 + input_1038_2;
+//   let = output_1038 = input_1038_sum;
+
+//   console.log(1038, "" + output_1038);
+// }
+
+// // TODO : 1039 : 정수 2개를 입력받아 합을 출력하는 프로그램을 작성해보자.
+// // TODO :        단, 입력되는 정수는 -2147483648 ~ +2147483648 이다.
+// // TODO :        2개의 정수가 공백으로 구분되어 입력된다.
+// // 입력 : 2147483648 2147483648
+// // 출력 : 4294967296
+
+// const min_value_1039 = -2147483648;
+// const max_value_1039 = 2147483648;
+
+// let input_1039 = prompt(" 1039, 2147483648 2147483648 입력 ").split(" ");
+
+// let input_1039_1 = Number(input_1039[0]);
+// let input_1039_2 = Number(input_1039[1]);
+
+// if (
+//   isNaN(input_1039_1) ||
+//   isNaN(input_1039_2) ||
+//   input_1039_1 < min_value_1039 ||
+//   input_1039_1 > max_value_1039 ||
+//   input_1039_2 < min_value_1039 ||
+//   input_1039_2 > max_value_1039
+// ) {
+//   console.log(
+//     1039,
+//     "" + "유효한 범위의 (-2147483648 ~ +2147483648) 를 입력하세요."
+//   );
+// } else {
+//   let input_1039_sum = input_1039_1 + input_1039_2;
+//   let = output_1039 = input_1039_sum;
+
+//   console.log(1039, "" + output_1039);
+// }
+
+// // TODO : 1040 : 입력된 정수의 부호를 바꿔 출력해보자.
+// // TODO :        단, -2147483647 ~ +2147483647 범위의 정수가 입력된다.
+// // TODO :        부호를 바꿔 출력한다.
+// // 입력 : -1
+// // 출력 : 1
+// const min_value_1040 = -2147483647;
+// const max_value_1040 = 2147483647;
+
+// let input_1040 = Number(prompt(" 1040, -1 입력 "));
+
+// if (
+//   isNaN(input_1040) ||
+//   input_1040 < min_value_1040 ||
+//   input_1040 > max_value_1040
+// ) {
+//   console.log(
+//     1040,
+//     "" + "유효한 범위의 (-2147483647 ~ +2147483647) 를 입력하세요."
+//   );
+// } else {
+//   let output_1040 = -input_1040;
+//   console.log(1040, "" + output_1040);
+// }
+
+// // TODO : 1041 : 영문자 1개를 입력받아 그 다음 문자를 출력해보자.
+// // TODO :        영문자 'A'의 다음 문자는 'B'이고, 영문자 '0'의 다음 문자는 '1'이다..
+// // TODO :        숫자는 수를 표현하는 문자로서 '0' 은 문자 그 자체를 의미하고, 0은 값을 의미한다.
+// // 입력 : a
+// // 출력 : b
+
+// let input_1041 = prompt(" 1041, a 입력 ");
+
+// let input_1041_Char = input_1041.charAt(0).toLowerCase();
+
+// if (input_1041_Char >= "a" && input_1041_Char < "z") {
+//   let output_1041_Char = String.fromCharCode(input_1041_Char.charCodeAt(0) + 1);
+//   console.log(1041, "" + "다음 문자: " + output_1041_Char);
+// } else if (!isNaN(input_1041)) {
+//   let input_1041_num = parseInt(input_1041);
+//   let output_1041_num = input_1041_num + 1;
+//   console.log(1041, "" + "다음 문자: " + output_1041_num);
+// } else {
+//   console.log(1041, "" + "유효한 범위의 (영문 또는 숫자)를 입력하세요");
+// }
+
+// // TODO : 1042 : 정수 2개(a, b) 를 입력받아 a를 b로 나눈 몫을 출력해보자.
+// // TODO :        단, -2147483648 <= a <= b <= +2147483647, b는 0이 아니다.
+// // TODO :        숫자는 수를 표현하는 문자로서 '0' 은 문자 그 자체를 의미하고, 0은 값을 의미한다.
+// // 입력 : 1 3
+// // 출력 : 0
+// const min_value_1042 = -2147483648;
+// const max_value_1042 = 2147483647;
+
+// let input_1042 = prompt(" 1042, 1 3 입력 ").split(" ");
+
+// let input_1042_a = Number(input_1042[0]);
+// let input_1042_b = Number(input_1042[1]);
+
+// if (
+//   input_1042_b !== 0 &&
+//   input_1042_a >= min_value_1042 &&
+//   input_1042_a <= input_1042_b &&
+//   input_1042_b <= max_value_1042
+// ) {
+//   let input_1042_result = Math.floor(input_1042_a / input_1042_b);
+//   let output_1042 = -input_1042_result;
+//   console.log(1042, "" + output_1042);
+// } else {
+//   console.log(
+//     1042,
+//     "" + "유효한 범위의 (-2147483648 ~ +2147483647)를 입력하세요."
+//   );
+// }
+
+// // TODO : 1043 : 정수 2개(a, b) 를 입력받아 a를 b로 나눈 나머지를 출력해보자.
+// // TODO :        단, 0 <= a, b <= +2147483647, b는 0이 아니다.
+// // 입력 : 10 3
+// // 출력 : 1
+
+// const min_value_1043 = 0;
+// const max_value_1043 = 2147483647;
+
+// let input_1043 = prompt(" 1043, 10 3 입력 ").split(" ");
+
+// let input_1043_a = Number(input_1043[0]);
+// let input_1043_b = Number(input_1043[1]);
+
+// if (
+//   input_1043_a >= min_value_1043 &&
+//   input_1043_a <= max_value_1043 &&
+//   input_1043_b !== min_value_1043
+// ) {
+//   let input_1043_result = Math.floor(input_1043_a % input_1043_b);
+//   let output_1043 = input_1043_result;
+//   console.log(1043, "" + output_1043);
+// } else {
+//   console.log(1043, "" + "유효한 범위의 (2147483647)를 입력하세요.");
+// }
+
+// // TODO : 1044 : 정수를 1개 입력받아 1만큼 더해 출력해보자.
+// // TODO :        단, -2147483648 ~ +2147483647 의 범위로 입력된다.
+// // 입력 : 2147483647
+// // 출력 : 2147483648
+
+// const min_value_1044 = -2147483648;
+// const max_value_1044 = 2147483647;
+
+// let input_1044 = Number(prompt(" 1044, 2147483647 입력 "));
+
+// if (input_1044 >= min_value_1044 && input_1044 <= max_value_1044) {
+//   let output_1044 = ++input_1044;
+//   console.log(1044, "" + output_1044);
+// } else {
+//   console.log(
+//     1044,
+//     "" + "유효한 범위의 (-2147483648 ~ +2147483647)를 입력하세요."
+//   );
+// }
+
+// // TODO : 1045 : 정수 2개(a, b)를 입력받아 합, 차, 곱, 몫, 나머지, 나눈 값을 자동으로 계산해보자.
+// // TODO :        단 0 <= a, b <= 2147483647, b는 0이 아니다.
+// // TODO :        정수 2개가 공백을 두고 입력된다.
+// // TODO :        첫 줄에 합
+// // TODO :        둘째 줄에 차,
+// // TODO :        셋째 줄에 곱,
+// // TODO :        넷째 줄에 몫,
+// // TODO :        다섯째 줄에 나머지,
+// // TODO :        여섯째 줄에 나눈 값을 순서대로 출력한다.
+// // TODO :        (실수, 소수점 이하 셋째 자리에서 반올림해 둘째 자리까지 출력)
+// // 입력 : 10 3
+// // 출력 : 13
+// //      : 7
+// //      :30
+// //      :3
+// //      :1
+// //      :3.33
+
+// const min_value_1045 = 0;
+// const max_value_1045 = 2147483647;
+
+// let input_1045 = prompt(" 1045, 10 3 입력 ").split(" ");
+
+// let input_1045_a = Number(input_1045[0]);
+// let input_1045_b = Number(input_1045[1]);
+
+// if (
+//   !isNaN(input_1045_a) &&
+//   !isNaN(input_1045_b) &&
+//   input_1045_b !== min_value_1045 &&
+//   input_1045_a > min_value_1045 &&
+//   input_1045_b > min_value_1045 &&
+//   input_1045_b < max_value_1045
+// ) {
+//   let output_1045_result_1 = input_1045_a + input_1045_b;
+//   let output_1045_result_2 = input_1045_a - input_1045_b;
+//   let output_1045_result_3 = input_1045_a * input_1045_b;
+//   let output_1045_result_4 = Math.floor(input_1045_a / input_1045_b);
+//   let output_1045_result_5 = input_1045_a % input_1045_b;
+//   let output_1045_result_6 = (input_1045_a / input_1045_b).toFixed(2);
+
+//   console.log(1045, "" + output_1045_result_1);
+//   console.log(1045, "" + output_1045_result_2);
+//   console.log(1045, "" + output_1045_result_3);
+//   console.log(1045, "" + output_1045_result_4);
+//   console.log(1045, "" + output_1045_result_5);
+//   console.log(1045, "" + output_1045_result_6);
+// } else {
+//   console.log(1045, "" + "유효한 범위를 입력하세요.");
+// }
