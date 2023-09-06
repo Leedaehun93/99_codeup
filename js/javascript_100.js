@@ -879,3 +879,93 @@
 //   }
 // } else {
 // }
+
+// // TODO : 1052 : 두 정수(a, b)를 입력받아
+// // TODO :        a와 b가 서로 다르면 1을, 그렇지 않으면 0을 출력하는 프로그램을 작성해보자.
+// // TODO :        두 정수 a, b가 공백을 두고 입력된다.
+// // TODO :        -2147483647 <= a, b <= +2147483648
+// // TODO :        a와 b가 다른 경우 1을, 그렇지 않은 경우 0을 출력한다.
+// // 입력 : 0 -1
+// // 출력 : 1
+
+// const min_value_1052 = -2147483647;
+// const max_value_1052 = 2147483648;
+
+// let input_1052 = prompt("1052, 0 -1 입력").split(" ");
+
+// if (input_1052.length === 2) {
+//   let input_1052_a = Number(input_1052[0]);
+//   let input_1052_b = Number(input_1052[1]);
+//   if (
+//     !isNaN(input_1052_a) &&
+//     !isNaN(input_1052_b) &&
+//     input_1052_a >= min_value_1052 &&
+//     input_1052_a <= max_value_1052 &&
+//     input_1052_b >= min_value_1052 &&
+//     input_1052_b <= max_value_1052
+//   ) {
+//     let output_1052 = (input_1052_a = input_1052_b ? 0 : 1);
+//     console.log(1052, "" + output_1052);
+//   } else {
+//     console.log(
+//       1052,
+//       "유효한 범위 내의 (-2147483647 ~ 2147483648) 정수 두 개 를 입력하세요."
+//     );
+//   }
+// } else {
+// }
+
+// // TODO : 1053 : 1(true, 참) 또는 0(false, 거짓) 이 입력되었을 때
+// // TODO :        반대로 출력하는 프로그램을 작성해보자.
+// // TODO :        정수 1개가 입력된다.(단, 0 또는 1 만 입력된다.)
+// // 입력 : 1
+// // 출력 : 0
+
+// let input_1053 = prompt("1053, 1 입력");
+
+// if (input_1053.length < 2) {
+//   if (!isNaN(input_1053)) {
+//     let output_1053 = (input_1053 = input_1053 ? 0 : 1);
+//     console.log(1053, "" + output_1053);
+//   } else {
+//     console.log(1053, "유효한 범위 내의 (0 ~ 1) 정수 한 개 를 입력하세요.");
+//   }
+// } else {
+//   console.log(1053, "유효한 범위 내의 (0 ~ 1) 정수 한 개 를 입력하세요.");
+// }
+
+// // TODO : 1054 : 두 개의 참(1) 또는 거짓(0)이 입력될 때,
+// // TODO :        모두 참일 때에만 참을 출력하는 프로그램을 작성해보자.
+// // TODO :        1 또는 0의 값만 가지는 2개의 정수가 공백을 두고 입력된다.
+// // TODO :        둘 다 참(1)일 경우에만 1을 출력하고, 그 외의 경우에는 0을 출력한다.
+// // 입력 : 1 1
+// // 출력 : 1
+
+// let input_1054 = prompt("1054, 1 1 입력").split(" ");
+
+// if (input_1054.length === 2) {
+//   let input_1054_a = Number(input_1054[0]);
+//   let input_1054_b = Number(input_1054[1]);
+//   if (!isNaN(input_1054_a) && !isNaN(input_1054_b)) {
+//     let output_1054 = input_1054_a === input_1054_b? 1 : 0;
+//     console.log(1054, "" + output_1054);
+//   } else {
+//     console.log(1054, "유효한 범위 내의 (0 또는 1) 정수 두 개를 입력하세요.");
+//   }
+// } else {
+//   console.log(1054, "유효한 범위 내의 (0 또는 1) 정수 두 개를 입력하세요.");
+// }
+
+// // TODO : 1055 : 두 개의 참(1) 또는 거짓(0)이 입력될 때,
+// // TODO :        하나라도 참이면 참을 출력하는 프로그램을 작성해보자.
+// // TODO :        1 또는 0의 값만 가지는 2개의 정수가 공백을 두고 입력된다.
+// // TODO :        하나라도 참일 경우 1을 출력하고, 그 외의 경우에는 0을 출력한다.
+// // 입력 : 1 1
+// // 출력 : 1
+
+// let input_1055 = prompt("1055, 1 1 입력").split(" ");
+
+// let input_1055_a = Number(input_1055[0]);
+// let input_1055_b = Number(input_1055[1]);
+// let output_1055 = input_1055_a || input_1055_b;
+// console.log(1055, output_1055);
